@@ -90,6 +90,7 @@ A quick example:
     client = lightspeed.Client()
 
     async def main():
+        await client.login()
         name = input('Input name of user you wish to view: ')
         try:
             user = await client.fetch_user(name)
